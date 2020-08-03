@@ -4,4 +4,4 @@
 + Número de núcleos: 2
 + Número de hilos: 4
 * Memoria: 8 Gb DDR4
-+ 2 Discos duros
+* 2 Discos duros
