@@ -34,7 +34,7 @@ print (f"Tiempo transcurrido al generar matriz aleatoria C y multiplicarla por m
 print (f"Tiempo total transcurrido = {Ttotal} s")
 
 #Tiempos: Aproximadamente 0.45 segundos en realizar la multiplicacion de A*I
-#Los demás procesos son rápidos. Probando solo con la generación de matrices aleatorias, el tiempo es similar.
+#Los demás procesos son rápidos (menor a 0.01 seg). Probando solo con la generación de matrices aleatorias, el tiempo es similar.
 #Por lo tanto, se puede concluir que la primera parte del código relacionado a multiplicación de matrices
 #toma algo más de tiempo, no importa si es manual o aleatorio. El tiempo total es prácticamente igual al tiempo
 #del primer proceso.
