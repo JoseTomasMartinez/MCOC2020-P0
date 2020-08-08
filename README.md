@@ -50,17 +50,17 @@
   * https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Graficos%20Rendimiento%20MATMUL.JPG
 
 * Respuestas preguntas:
- * Los gráficos muestran diferencias en los tiempos de ejecución. En el gráfico del profesor se ve que la primera multiplicación de matrices de cada corrida
-   se demora 0.1 ms, mientras que en el gráfico del alumno se demora 0.1 s. en la mayoría de las corridas. Parece ser que el computador del alumno toma mas
-   tiempo en los primeros calculos, pero una vez que el ciclo avanza, los calculos alcanzan tiempos parecidos a los del profesor. Esto se demuestra en las 
-   últimas multiplicaciones en cada corrida.
- * Las diferencias pueden deberse muy probablemente a las cualidades de cada computador. Memoria RAM, procesador, espacio utilizado, etc. Estos elementos 
-   afectan los procesos del computador, en los que se incluyen este tipo de programas, por lo tanto según las caracteristicas de cada computador los tiempos
-   varian. De todas maneras, a simple vista los valores son bastante similares.
- * El gráfico del uso de memoria es líneal debido a que el aumento de las dimensiones de la matriz es líneal. El uso de memoria depende de la cantidad de números
-   utilizados, por lo tanto a mayor dimension de las matrices que se multiplican, mayor es la cantidad de memoria utilizada. Como todas las corridas utilizan matrices
-   con las mismas dimensiones, la memoria utilizada es exactamente igual en todas las corridas, mientras que el tiempo tiene pequeñas variaciones en cada corrida, las 
-   cuales se pueden notar en el gráfico.
- * Versión de python: 3.7
- * Versión de numpy: 1.18.2
+  * Los gráficos muestran diferencias en los tiempos de ejecución. En el gráfico del profesor se ve que la primera multiplicación de matrices de cada corrida
+    se demora 0.1 ms, mientras que en el gráfico del alumno se demora 0.1 s. en la mayoría de las corridas. Parece ser que el computador del alumno toma mas
+    tiempo en los primeros calculos, pero una vez que el ciclo avanza, los calculos alcanzan tiempos parecidos a los del profesor. Esto se demuestra en las 
+    últimas multiplicaciones en cada corrida.
+  * Las diferencias pueden deberse muy probablemente a las cualidades de cada computador. Memoria RAM, procesador, espacio utilizado, etc. Estos elementos 
+    afectan los procesos del computador, en los que se incluyen este tipo de programas, por lo tanto según las caracteristicas de cada computador los tiempos
+    varian. De todas maneras, a simple vista los valores son bastante similares.
+  * El gráfico del uso de memoria es líneal debido a que el aumento de las dimensiones de la matriz es líneal. El uso de memoria depende de la cantidad de números
+    utilizados, por lo tanto a mayor dimension de las matrices que se multiplican, mayor es la cantidad de memoria utilizada. Como todas las corridas utilizan matrices
+    con las mismas dimensiones, la memoria utilizada es exactamente igual en todas las corridas, mientras que el tiempo tiene pequeñas variaciones en cada corrida, las 
+    cuales se pueden notar en el gráfico.
+  * Versión de python: 3.7
+  * Versión de numpy: 1.18.2
  
