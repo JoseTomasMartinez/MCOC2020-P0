@@ -44,3 +44,7 @@
 * Dirección IP (Interna, del router): 192.168.1.1
 * Dirección IP (Externa, del ISP): 191.114.36.190
 * Proveedor internet: Movistar
+
+# Desempeño Matmul
+* Gráfico Rendimiento Matmul:
+ *https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Graficos%20Rendimiento%20MATMUL.JPG
