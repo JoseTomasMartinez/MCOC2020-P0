@@ -48,3 +48,7 @@
 # Desempeño Matmul
 * Gráfico Rendimiento Matmul:
  *https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Graficos%20Rendimiento%20MATMUL.JPG
+
+* Respuestas preguntas:
+ * Los gráficos muestran diferencias en los tiempos de ejecución. En el gráfico del profesor se ve que la primera multiplicación de matrices de cada corrida
+   se demora 
