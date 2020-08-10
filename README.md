@@ -47,7 +47,7 @@
 
 # Desempeño Matmul
 * Gráfico Rendimiento Matmul:
- !(https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Graficos%20Rendimiento%20MATMUL.JPG)
+  ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Graficos%20Rendimiento%20MATMUL.JPG)
   * https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Graficos%20Rendimiento%20MATMUL.JPG
 
 * Respuestas preguntas:
@@ -64,7 +64,9 @@
     cuales se pueden notar en el gráfico.
   * Versión de python: 3.7
   * Versión de numpy: 1.18.2
-  * Imagen uso de procesador: https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20utilizados%20MATMUL.jpg
+  * Imagen uso de procesador: 
+  ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20utilizados%20MATMUL.jpg)
+  * https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20utilizados%20MATMUL.jpg
    * La imagen muestra los porcentajes de uso de los cuatro procesadores lógicos. Al inicio del gráfico se ve un uso menor al 50%. El aumento brusco del uso de los 
      procesadores que se puede notar en la imagen, sucede cuando se corre el código timing_matmul.py. Como el aumento se produce en todos los procesadores se puede 
      afirmar que se esta utilizando más de uno.
