@@ -73,4 +73,5 @@
 # Desempeño MiMatmul
 * Gráfico Rendimiento MiMatmul:
 * Imagen uso de procesador:
-![myimage-alt-tag]
+![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20utilizados%20MIMATMUL.JPG)
+*https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20utilizados%20MIMATMUL.JPG
