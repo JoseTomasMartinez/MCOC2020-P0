@@ -73,9 +73,9 @@
 # Desempeño MiMatmul
 * Gráfico Rendimiento MiMatmul:
 * Imagen uso de procesador:
-![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20utilizados%20MIMATMUL.JPG)
-* https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20utilizados%20MIMATMUL.JPG
- * Al igual que con la multiplicación de matrices de python, se utilizan los 4 procesadores que posee el computador, sin embargo se puede observar que el porcentaje 
+ ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20utilizados%20MIMATMUL.JPG)
+ * https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20utilizados%20MIMATMUL.JPG
+  * Al igual que con la multiplicación de matrices de python, se utilizan los 4 procesadores que posee el computador, sin embargo se puede observar que el porcentaje 
     de uso es menor para el caso del método implementado "a mano". Esto probablemente se debe a que el método que usa python es más complejo y efectivo, por lo tanto
     el procesador debe trabajar más.
  
