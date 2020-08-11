@@ -72,6 +72,12 @@
      afirmar que se esta utilizando más de uno.
 # Desempeño MiMatmul
 * Gráfico Rendimiento MiMatmul:
+ ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Rendimiento%20MiMatmul%20(dim%20600).PNG)
+  * https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Rendimiento%20MiMatmul%20(dim%20600).PNG
+   * Los gráficos de rendimiento de la multiplicacion de matrices de python y del método implementado "a mano" son prácticamente iguales, con la diferencia en que el
+     el segundo llega solo hasta la matriz de 600x600. Es decir, con el método de python el programa se demora el mismo tiempo en 10 corridas hasta matrices de 
+     10000x10000 que el método implementado, siendo que para este solo se llegó hasta matrices de 600x600, dado que con mas números el tiempo era demasiado. Por lo tanto,
+     el método de python es mucho más eficiente que el método implementado
 * Imagen uso de procesador:
  ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20utilizados%20MIMATMUL.JPG)
   * https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20utilizados%20MIMATMUL.JPG
