@@ -76,6 +76,7 @@
      10000x10000 que el método implementado, siendo que para este solo se llegó hasta matrices de 600x600, dado que con mas números el tiempo era demasiado. Por lo tanto,
      el método de python es mucho más eficiente que el método implementado
 * Imagen uso de procesador:
+
  ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20utilizados%20MIMATMUL.JPG)
    * Al igual que con la multiplicación de matrices de python, se utilizan los 4 procesadores que posee el computador, sin embargo se puede observar que el porcentaje 
      de uso es menor para el caso del método implementado "a mano". Esto probablemente se debe a que el método que usa python es más complejo y efectivo, por lo tanto
