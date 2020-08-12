@@ -81,4 +81,11 @@
    * Al igual que con la multiplicación de matrices de python, se utilizan los 4 procesadores que posee el computador, sin embargo se puede observar que el porcentaje 
      de uso es menor para el caso del método implementado "a mano". Esto probablemente se debe a que el método que usa python es más complejo y efectivo, por lo tanto
      el procesador debe trabajar más.
- 
+# Desempeño de INV
+* Tamaños en memoria tipos de datos:
+   * np.half: float16 (2 bytes)
+   * np.single: float32 (4 bytes)
+   * np.double: float64 (8 bytes)
+   * np.longdouble: float64 (8 bytes)
+   * Como los datos de tipo double y longdouble son iguales en el sistema del alumno, el desempeño de la inversa de la matriz laplaciana se realizó para los primeros tres
+     tipos de datos
