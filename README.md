@@ -99,7 +99,10 @@
    * Otra cosa que se puede observar es que los tiempos son algo menores a medida que el tipo de dato es menos pesado. Es decir los tiempos para un tipo de dato half (float16)
      es menor que un tipo de dato single (float32) y este a su vez menor que un tipo de dato double(float64), lo cual tiene bastante lógica. Esto se puede observar en los
      tiempos para las matrices mas grandes. Cabe mencionar que numpy muestra un error al intentar calcular la inversa de matrices para el tipo de dato half (float16), es por 
-     eso que no existe gráfico de rendimiento para el caso 1 en este tipo de dato, ya que scipy si lo calcula. 
+     eso que no existe gráfico de rendimiento para el caso 1 en este tipo de dato, mientras que si los hay para los casos 2 y 3, pues scipy si lo calcula. 
    * En cuanto a las diferencias de rendimiento entre scipy utilizando overflow=True o False, no se aprecian mayores diferencias a simple vista. En general el tiempo de
      ejecución para todas las corridas era parecido. Sí se notaba una demora mayor en el tipo de dato double, lo que también es lógico dado que son datos más pesados.
-   
+   * El uso de los procesadores es practicamente máximo en cualquiera de los casos y en todos los cuatro procesadores trabajan al mismo tiempo. La única diferencia es que
+     para el tipo de dato half (float 16) el uso no comienza siendo alto como en los demás, si no que va subiendo de a poco hasta que en cierto numero de elementos de la
+     matriz el uso es máximo, tal como muestra la imagen:
+     ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20Desempe%C3%B1o%20INV%20Half.png)
