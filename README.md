@@ -89,3 +89,17 @@
    * np.longdouble: float64 (8 bytes)
    * Como los datos de tipo double y longdouble son iguales en el sistema del alumno, el desempeño de la inversa de la matriz laplaciana se realizó para los primeros tres
      tipos de datos
+* Aálisis memoria y procesadores:
+   * Para mostrar como afectan las cachés en el desempeño se toma como ejemplo el gráfico de rendimiento del caso 3 (scipy overflow=True) con el tipo de dato single (float32).
+    ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Rendimiento%20Caso%202%20Single.png)
+   * Se puede notar que los saltos que se producen en los tiempos son a la altura de las líneas azules marcadas en la memoria, las cuales representan las memorias de las cachés
+     del procesador. Esto se debe al aumento en el uso de memoria dado al aumento de dimension en las matrices que se invierten. Cuando el uso de memoria es cercano al tamaño 
+     de alguna de las cachés se comienza a utilizar la siguiente. En ese traspaso existen pequeños saltos, pues el procesador comienza a utilizar otra memoria para realizar el
+     proceso. Estos saltos se pueden ver también en todos los otros casos, cuyos gráficos fueron subidos al repositorio. 
+   * Otra cosa que se puede observar es que los tiempos son algo menores a medida que el tipo de dato es menos pesado. Es decir los tiempos para un tipo de dato half (float16)
+     es menor que un tipo de dato single (float32) y este a su vez menor que un tipo de dato double(float64), lo cual tiene bastante lógica. Esto se puede observar en los
+     tiempos para las matrices mas grandes. Cabe mencionar que numpy muestra un error al intentar calcular la inversa de matrices para el tipo de dato half (float16), es por 
+     eso que no existe gráfico de rendimiento para el caso 1 en este tipo de dato, ya que scipy si lo calcula. 
+   * En cuanto a las diferencias de rendimiento entre scipy utilizando overflow=True o False, no se aprecian mayores diferencias a simple vista. En general el tiempo de
+     ejecución para todas las corridas era parecido. Sí se notaba una demora mayor en el tipo de dato double, lo que también es lógico dado que son datos más pesados.
+   
