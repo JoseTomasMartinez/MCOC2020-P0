@@ -102,7 +102,15 @@
      eso que no existe gráfico de rendimiento para el caso 1 en este tipo de dato, mientras que si los hay para los casos 2 y 3, pues scipy si lo calcula. 
    * En cuanto a las diferencias de rendimiento entre scipy utilizando overflow=True o False, no se aprecian mayores diferencias a simple vista. En general el tiempo de
      ejecución para todas las corridas era parecido. Sí se notaba una demora mayor en el tipo de dato double, lo que también es lógico dado que son datos más pesados.
-   * El uso de los procesadores es practicamente máximo en cualquiera de los casos y en todos, los cuatro procesadores trabajan al mismo tiempo. La única diferencia es que
-     para el tipo de dato half (float16) el uso no comienza siendo alto como en los demás, si no que va subiendo de a poco hasta que en cierto numero de elementos de la
-     matriz el uso es máximo, tal como muestra la imagen:
+   * El uso de los procesadores es practicamente máximo en todos ellos y en cualquiera de los casos. La única diferencia es que para el tipo de dato half (float16) el uso 
+     no comienza siendo alto como en los demás, si no que va subiendo de a poco hasta que en cierto numero de elementos de la matriz el uso es máximo, tal como muestra 
+     la imagen:
      ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20Desempe%C3%B1o%20INV%20Half.png)
+* Preguntas
+   * El algoritmo utilizado por cada método debiese ser el mismo, ya que tanto numpy como scipy buscan optimizar los procesos. Yo creo que el algoritmo que se utiliza es
+     es el de la base reciproca o el de la derivada de la matriz inversa, pues son los únicos que no involucran la creacion de más matrices como lo es en el caso de la 
+     matriz adjunta, la matriz identidad a un lado y pivotear o la descomposición LU. Si se usaran estos tres últimos métodos mencionados, el proceso sería más lento pues 
+     al generar más matrices se necesita más uso de memoria.
+   * El paralelismo ayuda a optimizar los procesos, ya que python divide los procesos en otros más pequeños, los cuales se realizan al mismo tiempo, mejorando el rendimiento.
+     la estructura de las cachés influye en estos procesos pequeños, ya que al dividirlos utilizan menos memoria y hay menos traspasos entre cachés. Esto también mejora el
+     rendimiento, ya que como se observa en los gráficos, al haber cambios de cachés se producen saltos en los gráficos, que representan pequeñas pausas.
