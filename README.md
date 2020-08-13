@@ -102,7 +102,7 @@
      eso que no existe gráfico de rendimiento para el caso 1 en este tipo de dato, mientras que si los hay para los casos 2 y 3, pues scipy si lo calcula. 
    * En cuanto a las diferencias de rendimiento entre scipy utilizando overflow=True o False, no se aprecian mayores diferencias a simple vista. En general el tiempo de
      ejecución para todas las corridas era parecido. Sí se notaba una demora mayor en el tipo de dato double, lo que también es lógico dado que son datos más pesados.
-   * El uso de los procesadores es practicamente máximo en cualquiera de los casos y en todos los cuatro procesadores trabajan al mismo tiempo. La única diferencia es que
-     para el tipo de dato half (float 16) el uso no comienza siendo alto como en los demás, si no que va subiendo de a poco hasta que en cierto numero de elementos de la
+   * El uso de los procesadores es practicamente máximo en cualquiera de los casos y en todos, los cuatro procesadores trabajan al mismo tiempo. La única diferencia es que
+     para el tipo de dato half (float16) el uso no comienza siendo alto como en los demás, si no que va subiendo de a poco hasta que en cierto numero de elementos de la
      matriz el uso es máximo, tal como muestra la imagen:
      ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Procesadores%20Desempe%C3%B1o%20INV%20Half.png)
