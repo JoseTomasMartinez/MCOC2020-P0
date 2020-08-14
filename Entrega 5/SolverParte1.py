@@ -1,3 +1,4 @@
+#Jose Tomas Martinez Lavin
 from numpy import *
 from time import perf_counter
 import matplotlib.pyplot as plt
