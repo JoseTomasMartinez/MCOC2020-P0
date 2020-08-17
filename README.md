@@ -114,3 +114,12 @@
    * El paralelismo ayuda a optimizar los procesos, ya que python divide los procesos en otros más pequeños, los cuales se realizan al mismo tiempo, mejorando el rendimiento.
      la estructura de las cachés influye en estos procesos pequeños, ya que al dividirlos utilizan menos memoria y hay menos traspasos entre cachés. Esto también mejora el
      rendimiento, ya que como se observa en los gráficos, al haber cambios de cachés se producen saltos en los gráficos, que representan pequeñas pausas.
+# Desempeño Solvers     
+   * ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Entrega%206/Rendimiento%20Solvers%20Parte2.png)
+   * Del gráfico se pueden desprender varias cosas. En primer lugar, es notorio que el método mas lento para resolver el sistema de ecuaciones es calcular la inversa de A y
+     multiplicarla por el vector b. Probablemente se demora más por el hecho de tener que generar otra matriz. 
+     En cuanto a los solvers de numpy y scipy, ambos son practicamente iguales. Desde la matriz de 50x50 ambos metodos se superponen. Al final se ve algo más de rapidez en 
+     el método de numpy. Con las matrices más pequeñas, el método de numpy es claramente más rápido.
+     Las variantes que permite realizar scipy dentro del mismo solver son eficaces. Se puede ver en el gráfico que el método de scipy con matriz simetrica, positiva o con  
+     sobreescritura de datos es claramente más eficaz que el mismo método sin esas especificaciones o que los otros dos metodos (numpy y la inversa). Los tres métodos son
+     igualmente eficaces, pues las lineas se superponen para casi todas las dimensiones de las matrices
