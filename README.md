@@ -115,7 +115,7 @@
      la estructura de las cachés influye en estos procesos pequeños, ya que al dividirlos utilizan menos memoria y hay menos traspasos entre cachés. Esto también mejora el
      rendimiento, ya que como se observa en los gráficos, al haber cambios de cachés se producen saltos en los gráficos, que representan pequeñas pausas.
 # Desempeño Solvers     
-   * ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Entrega%206/Rendimiento%20Solvers%20Parte2.png)
+   ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Entrega%206/Rendimiento%20Solvers%20Parte2.png)
    
    * Del gráfico se pueden desprender varias cosas. En primer lugar, es notorio que el método mas lento para resolver el sistema de ecuaciones es calcular la inversa de A y
      multiplicarla por el vector b. Probablemente se demora más por el hecho de tener que generar otra matriz. 
