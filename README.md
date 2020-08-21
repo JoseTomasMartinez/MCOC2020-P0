@@ -147,5 +147,32 @@
     de la multiplicacion de matrices. Se llego a un tamaño de N=20.000 y el tiempo de solucion es cercano al tiempo de matrices muy pequeñas, el comportamiento es cercano a
     ser constante. Luego, para el algoritmo solver para matrices dispersas tambien se ve una mejoria notoria. El tiempo parece aumentar linealmente con respecto al tamaño de 
     la matriz. El algoritmo mas lento de los tres para matrices dispersas es el calculo de la inversa. El comportamiento es cercano a ser cuadratico, es decir a medida que
-    aumenta el tamaño de la matriz el tiempo se duplica..
+    aumenta el tamaño de la matriz el tiempo se duplica.
+    
+  * Complejidades asintoticas (se menciona la complejidad asinstótica de cada caso primero para luego comentarlas)
+  * Ensamblajes:
+  * Matmul Matriz LLena: Cuadratica 
+  * Matmul Matriz Dispersa: Constante - Lineal
+  * Solver Matriz Llena: Cuadratica - Cubica
+  * Solver Matriz Dispersa: Constante - Lineal
+  * Inversa Matriz LLena: Cuadratica - Cubica
+  * Inversa Matriz Dispersa: Constante - Lineal
+  * Algoritmo:
+  * Matmul Matriz LLena: Cubica
+  * Matmul Matriz Dispersa: Cuadratica
+  * Solver Matriz Llena: Cubica
+  * Solver Matriz Dispersa: Lineal
+  * Inversa Matriz LLena: Cubica - Cuarta
+  * Inversa Matriz Dispersa: Cuadratica
+  
+  *  Como es de esperarse, la complejidad asintotica para el ensamblaje de las matrices es menor a los algoritmos, ya que es un proceso mas rápido. El código utilizado para
+     el ensamblaje es el siguiente:
+     ```
+     def matriz_laplaciana(N,t=double):
+     	m=eye(N,N)-eye(N,N,1)
+	     return t(m+m.T)
+     ```
+      
+    
+  
 
