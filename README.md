@@ -171,8 +171,8 @@
      el ensamblaje es el siguiente:
      ```
      def matriz_laplaciana(N,t=double):
-         m=eye(N,N)-eye(N,N,1)
-	 return t(m+m.T)
+          m=eye(N,N)-eye(N,N,1)
+	  return t(m+m.T)
      ```
       
     
