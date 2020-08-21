@@ -140,4 +140,12 @@
    
     ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Entrega%207/Complejidad%20algoritmica%20inversa.png)
     ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Entrega%207/Complejidad%20algoritmica%20inversa%20Dispersa.png)
+    
+  * Comentarios Entrega 7
+  * En los tres casos los algoritmos tienen comportamientos parecidos cuando se trata de matrices llenas, hay diferencias en los tiempos, pero en general el aumento de tiempo
+    a medida que crece el tamaño de la matriz es ordenado. En cuanto a las matrices dispersas, es muy notoria la mejoria en la rapidez del algoritmo. Especialmente en el caso
+    de la multiplicacion de matrices. Se llego a un tamaño de N=20.000 y el tiempo de solucion es cercano al tiempo de matrices muy pequeñas, el comportamiento es cercano a
+    ser constante. Luego, para el algoritmo solver para matrices dispersas tambien se ve una mejoria notoria. El tiempo parece aumentar linealmente con respecto al tamaño de 
+    la matriz. El algoritmo mas lento de los tres para matrices dispersas es el calculo de la inversa. El comportamiento es cercano a ser cuadratico, es decir a medida que
+    aumenta el tamaño de la matriz el tiempo se duplica..
 
