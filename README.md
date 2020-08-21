@@ -123,4 +123,10 @@
      el método de numpy. Con las matrices más pequeñas, el método de numpy es claramente más rápido.
      Las variantes que permite realizar scipy dentro del mismo solver son eficaces. Se puede ver en el gráfico que el método de scipy con matriz simetrica, positiva o con 
      sobreescritura de datos es claramente más eficaz que el mismo método sin esas especificaciones o que los otros dos metodos (numpy y la inversa). Los tres métodos son
-     igualmente eficaces, pues las lineas se superponen para casi todas las dimensiones de las matrices
+     igualmente eficaces, pues las lineas se superponen para casi todas las dimensiones de las matrices.
+    
+# Matrices dispersas y Complejidad Computacional
+* Complejidad algoritmica de Matmul
+    ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Entrega%207/Complejidad%20algoritmica%20matmul.png)
+    ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Entrega%207/Complejidad%20algoritmica%20matmul%20Dispersa.png)
+
