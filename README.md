@@ -150,6 +150,7 @@
     aumenta el tamaño de la matriz el tiempo se duplica.
     
   * Complejidades asintoticas (se menciona la complejidad asinstótica de cada caso primero para luego comentarlas)
+  
   * Ensamblajes:
   * Matmul Matriz LLena: Cuadratica 
   * Matmul Matriz Dispersa: Constante - Lineal
@@ -157,6 +158,7 @@
   * Solver Matriz Dispersa: Constante - Lineal
   * Inversa Matriz LLena: Cuadratica - Cubica
   * Inversa Matriz Dispersa: Constante - Lineal
+  
   * Algoritmo:
   * Matmul Matriz LLena: Cubica
   * Matmul Matriz Dispersa: Cuadratica
@@ -169,8 +171,8 @@
      el ensamblaje es el siguiente:
      ```
      def matriz_laplaciana(N,t=double):
-     	m=eye(N,N)-eye(N,N,1)
-	     return t(m+m.T)
+         m=eye(N,N)-eye(N,N,1)
+	 return t(m+m.T)
      ```
       
     
