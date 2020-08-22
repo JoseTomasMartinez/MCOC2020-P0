@@ -174,6 +174,16 @@
       m=eye(N,N)-eye(N,N,1)
       return t(m+m.T)
      ```
+  
+  *  Cabe destacar que el algoritmo mas rapido y eficiente es el sover para matrices dispersas, pues su complejidad asintotica es cercano un comportamiento lineal. Los otros
+     dos algoritmos para matrices dispersas tienen complejidad asintotica cuadratica. En todos los casos las matrices dispersas son mas eficientes. Lo cual es logico ya que se
+     omiten todos los ceros que posee la matriz y se trabaja unicamente con numeros distintos a 0. Con matrices pequeñas no influye tanto, pero mientras mas crecen las matrices,
+     más elemento iguales a cero poseen, los cuales en el caso de matrices llenas influyen en el proceso. Por eso mientras mas grandes son las matrices, más se nota la eficencia
+     de las matrices dispersas v/s las llenas.
+     
+  *  Las corridas parecen ser estables en todos los casos, menos en el solver de matrices llenas. El funcionamiento del solver pareciera afectar en todo el proceso, ya que se
+     notan saltos tambien en los tiempos de ensamblaje, siendo que se utiliza el mismo codigo que para los demás algoritmos. Los saltos aparecen mas bien entre tamaños de
+     matrices con N = entre 0 y 500.
       
     
   
