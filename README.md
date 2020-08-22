@@ -126,6 +126,7 @@
      igualmente eficaces, pues las lineas se superponen para casi todas las dimensiones de las matrices.
     
 # Matrices Dispersas y Complejidad Computacional
+* (En la carpeta de nombre "Entrega 7" del repositorio se encuentran los códigos y gráficos correspondientes a esta entrega)
 * Complejidad Algoritmica de Matmul
    
     ![myimage-alt-tag](https://github.com/JoseTomasMartinez/MCOC2020-P0/blob/master/Entrega%207/Complejidad%20algoritmica%20matmul.png)
